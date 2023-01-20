@@ -1,9 +1,9 @@
 import './App.css'
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
-import CalendarView from './pages/Calendar'
-import ToDo from './pages/ToDo'
-import Navbar from './components/Navbar'
+import CalendarView from './pages/Calendar/Calendar'
+import ToDo from './pages/ToDo/ToDo'
+import Navbar from './components/Navbar/Navbar'
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<CalendarView></CalendarView>}/>
-        <Route path='/todo' element={<ToDo></ToDo>}/>
+        <Route path='/todo/:id' element={<ToDo></ToDo>}/>
       </Routes>
     </div>
   )

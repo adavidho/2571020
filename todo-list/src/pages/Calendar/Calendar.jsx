@@ -11,7 +11,7 @@ const CalendarView = () => {
     const linkToDay = (value) => {
         const date = new Date(value);
         console.log(date.getDate());
-       navigate(`todo/${date.getDate()}`);
+        navigate(`todo/${date.getDate()}`);
 
       
     }
@@ -25,7 +25,7 @@ const CalendarView = () => {
                 defaultView='month'
                 minDetail='month'
                 maxDetail='month'
-                onClickDay={(value, event) => linkToDay(value)}
+                onClickDay={(value) => linkToDay(value)}
             />
         </div>
     )
