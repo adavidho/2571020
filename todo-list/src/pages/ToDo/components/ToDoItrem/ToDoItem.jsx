@@ -1,9 +1,9 @@
 // import "./ToDoItem.css"
 
-const ToDoItem = ({day}) => {
+const ToDoItem = ({text}) => {
     return (
-        <div className="item-container">
-            <h1>Daily To Do {day}</h1>
+        <div className="todo-item">
+            <h3>{text}</h3>
         </div>
     );
 };

@@ -4,8 +4,14 @@ h1{
 }
 
 .todo-container{
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 10%;
+}
+
+.item-container{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    padding: 3%;
 }
