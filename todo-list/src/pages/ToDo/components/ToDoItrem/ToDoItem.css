@@ -17,3 +17,8 @@ button{
     width: 30%;
     justify-content: right;
 }
+
+.text-checked{
+    color:rgb(107, 106, 106);
+    text-decoration: line-through;
+}

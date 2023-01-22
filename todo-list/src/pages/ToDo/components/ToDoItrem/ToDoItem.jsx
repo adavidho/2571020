@@ -1,11 +1,11 @@
 import "./ToDoItem.css"
 
-const ToDoItem = ({ elementNr, text, deleteItem}) => {
+const ToDoItem = ({ elementNr, text, checked, deleteItem, checkItem}) => {
     return (
         <div className="todo-item">
             <div className="align-left">
-                <input type="checkbox" checked="checked" readOnly="True"/>
-                <h3>{text}</h3>
+                <input type="checkbox" checked={checked} onChange={(e) => checkItem(elementNr)}/>
+                <h3 className={checked ? "text-checked":""}>{text}</h3>
             </div>
             <div className="align-right">
                 <button onClick={(e) => deleteItem(elementNr, e)}>Delete</button>
