@@ -48,19 +48,16 @@ const ToDo = ({ updateDays, toDoStore }) => {
         
     return (
         <div className="todo-container">
-            <h1>To Do List - Day {id}</h1>
-            <div className="todo-container">
-                {rows}
-                <input 
-                    className="todo-item" 
-                    type="text" 
-                    placeholder="Enter To Do..." 
-                    name={id} 
-                    value={newItem} 
-                    onChange={handleInput} 
-                    onKeyDown={addItem}
-                />    
-            </div>
+            {rows}
+            <input 
+                className="todo-item" 
+                type="text" 
+                placeholder="Enter To Do..." 
+                name={id} 
+                value={newItem} 
+                onChange={handleInput} 
+                onKeyDown={addItem}
+            />    
         </div>
     );
 };

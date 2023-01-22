@@ -5,7 +5,12 @@ const Navbar = () => {
 
     return (
         <div className='navbar'>
-            <Link className='main-heading' to='/'>To Do List Project</Link>
+            <h1>To Do List Project</h1>
+            <div className='nav-button-container'>
+                <Link className='nav-button' to='/'>Month</Link>
+                <Link className='nav-button' to={`todo/${new Date().getDate()}`}>Day</Link>
+            </div>
+            
         </div>
     );
 };

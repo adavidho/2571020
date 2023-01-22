@@ -12,7 +12,6 @@ const CalendarView = ({toDoStore}) => {
     const linkToDay = (value) => {
         const date = new Date(value);
         navigate(`todo/${date.getDate()}`);
-      
     }
     return (
         <div className='calendar-container'>
