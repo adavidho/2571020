@@ -1,5 +1,11 @@
+p{
+    font-size: x-small;
+}
 .calendar-container{
     display: flex;
     justify-content: center;
     padding: 10%;
+}
+.react-calendar {
+    width: 85%;
 }

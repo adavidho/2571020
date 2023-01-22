@@ -28,7 +28,7 @@ const App = () => {
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<CalendarView/>}/>
+        <Route path='/' element={<CalendarView toDoStore={toDoStore}/>}/>
         <Route path='/todo/:id' element={<ToDo updateDays={updateDays} toDoStore={toDoStore}/>}/>
       </Routes>
     </div>

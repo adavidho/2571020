@@ -36,7 +36,14 @@ const ToDo = ({ updateDays, toDoStore }) => {
     }
     const rows = [];
     for (const [key, value] of Object.entries(toDoStore[id])) {
-        rows.push(<ToDoItem key={key} elementNr={key} text={value.text} checked={value.checked} deleteItem={deleteItem} checkItem={checkItem}/>);
+        rows.push(<ToDoItem 
+            key={key} 
+            elementNr={key} 
+            text={value.text} 
+            checked={value.checked} 
+            deleteItem={deleteItem} 
+            checkItem={checkItem}
+        />);
       }
         
     return (
@@ -44,7 +51,15 @@ const ToDo = ({ updateDays, toDoStore }) => {
             <h1>To Do List - Day {id}</h1>
             <div className="todo-container">
                 {rows}
-                <input className="todo-item" type="text" placeholder="Enter To Do..." name={id} value={newItem} onChange={handleInput} onKeyDown={addItem}/>    
+                <input 
+                    className="todo-item" 
+                    type="text" 
+                    placeholder="Enter To Do..." 
+                    name={id} 
+                    value={newItem} 
+                    onChange={handleInput} 
+                    onKeyDown={addItem}
+                />    
             </div>
         </div>
     );
