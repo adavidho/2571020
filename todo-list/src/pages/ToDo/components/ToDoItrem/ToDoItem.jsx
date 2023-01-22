@@ -1,6 +1,6 @@
 import "./ToDoItem.css"
 
-const ToDoItem = ({text, deleteItem}) => {
+const ToDoItem = ({ elementNr, text, deleteItem}) => {
     return (
         <div className="todo-item">
             <div className="align-left">
@@ -8,7 +8,7 @@ const ToDoItem = ({text, deleteItem}) => {
                 <h3>{text}</h3>
             </div>
             <div className="align-right">
-                <button onClick={deleteItem}>Delete</button>
+                <button onClick={(e) => deleteItem(elementNr, e)}>Delete</button>
             </div>
             
         </div>

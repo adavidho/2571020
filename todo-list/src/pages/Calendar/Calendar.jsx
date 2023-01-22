@@ -10,12 +10,10 @@ const CalendarView = () => {
     const navigate = useNavigate();
     const linkToDay = (value) => {
         const date = new Date(value);
-        console.log(date.getDate());
         navigate(`todo/${date.getDate()}`);
 
       
     }
-    console.log(new Date());
     return (
         <div className='calendar-container'>
             <Calendar

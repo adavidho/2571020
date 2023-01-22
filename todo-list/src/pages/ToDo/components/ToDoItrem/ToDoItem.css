@@ -1,6 +1,7 @@
 button{
     background-color: white;
-    border: none
+    border: none;
+    cursor: pointer;
 }
 
 .align-left{

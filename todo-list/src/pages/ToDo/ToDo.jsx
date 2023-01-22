@@ -14,19 +14,21 @@ const ToDo = ({ updateDays, toDoStore }) => {
     const addItem = (event) => {
         if ((event.key === 'Enter') && !(event.target.value === '')) {
             let items = toDoStore[id];
-            items.push(event.target.value);
+            items[Object.keys(toDoStore[id]).length] = event.target.value
             updateDays(items);
             setNewItem("");   
         }
     }
 
-    const deleteItem = () => {
-        
+    const deleteItem = (key, event) => {
+        let items = toDoStore[id];
+        delete items[key];
+        updateDays(items);
     }
     const rows = [];
-    toDoStore[id].forEach(element => {
-        rows.push(<ToDoItem text={element} deleteItem={deleteItem}/>);
-    });
+    for (const [key, value] of Object.entries(toDoStore[id])) {
+        rows.push(<ToDoItem key={key} elementNr={key} text={value} deleteItem={deleteItem}/>);
+      }
         
     return (
         <div className="todo-container">
