@@ -19,9 +19,13 @@ const ToDo = ({ updateDays, toDoStore }) => {
             setNewItem("");   
         }
     }
+
+    const deleteItem = () => {
+        
+    }
     const rows = [];
     toDoStore[id].forEach(element => {
-        rows.push(<ToDoItem text={element}/>);
+        rows.push(<ToDoItem text={element} deleteItem={deleteItem}/>);
     });
         
     return (
@@ -29,7 +33,7 @@ const ToDo = ({ updateDays, toDoStore }) => {
             <h1>To Do List - Day {id}</h1>
             <div className="todo-container">
                 {rows}
-                <input type="text" name={id} value={newItem} onChange={handleChange} onKeyDown={addItem}/>    
+                <input className="todo-item" type="text" placeholder="Enter To Do..." name={id} value={newItem} onChange={handleChange} onKeyDown={addItem}/>    
             </div>
         </div>
     );
