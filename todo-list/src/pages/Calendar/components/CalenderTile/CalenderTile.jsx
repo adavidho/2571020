@@ -1,14 +1,9 @@
 const CalenderTile = ({ day, toDoStore }) => {
+  let numToDos = "";
+  if (day in toDoStore) {
+    numToDos = Object.keys(toDoStore[day]).length;
+  }
 
-    let numToDos = "";
-    if (day in toDoStore){
-        numToDos = Object.keys(toDoStore[day]).length
-        
-    }
-    
-    return (
-        <p>to-dos: {numToDos}</p>
-    );
-
+  return <p>to-dos: {numToDos}</p>;
 };
-export default CalenderTile
+export default CalenderTile;

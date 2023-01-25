@@ -1,12 +1,12 @@
-p{
-    font-size: x-small;
+p {
+  font-size: x-small;
 }
-.calendar-container{
-    display: flex;
-    justify-content: center;
-    padding: 8%;
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  padding: 8%;
 }
 .react-calendar {
-    width: 85%;
-    height: 90%;
+  width: 85%;
+  height: 90%;
 }

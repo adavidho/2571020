@@ -1,24 +1,23 @@
-button{
-    background-color: white;
-    border: none;
-    cursor: pointer;
+button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.align-left{
-    display: flex;
-    align-items: center;
-    width: 70%;
-
+.align-left {
+  display: flex;
+  align-items: center;
+  width: 70%;
 }
 
-.align-right{
-    display: flex;
-    align-items: center;
-    width: 30%;
-    justify-content: right;
+.align-right {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  justify-content: right;
 }
 
-.text-checked{
-    color:rgb(107, 106, 106);
-    text-decoration: line-through;
+.text-checked {
+  color: rgb(107, 106, 106);
+  text-decoration: line-through;
 }

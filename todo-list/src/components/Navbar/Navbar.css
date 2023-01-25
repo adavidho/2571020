@@ -1,33 +1,33 @@
-h1{
-    text-align: center;
-    width: 100%
+h1 {
+  text-align: center;
+  width: 100%;
 }
 
-.navbar{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: white;
-    opacity: 1;
+.navbar {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  opacity: 1;
 }
 
-.main-heading{
-    margin: 10px;
-    color:black;
-    font-size: x-large;
-    font-weight: bolder;
-    text-decoration: none;
+.main-heading {
+  margin: 10px;
+  color: black;
+  font-size: x-large;
+  font-weight: bolder;
+  text-decoration: none;
 }
 
-.nav-button-container{
-    position:absolute;
-    right: 30px;
+.nav-button-container {
+  position: absolute;
+  right: 30px;
 }
 
-.nav-button{
-    margin-left: 15px;
-    text-decoration: none;
-    color: rgb(67, 67, 67);
-    background-color: white;
+.nav-button {
+  margin-left: 15px;
+  text-decoration: none;
+  color: rgb(67, 67, 67);
+  background-color: white;
 }

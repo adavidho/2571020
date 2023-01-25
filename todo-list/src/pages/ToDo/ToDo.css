@@ -1,32 +1,32 @@
-h1{
-    text-align: center;
-    width: 100%
+h1 {
+  text-align: center;
+  width: 100%;
 }
 
-h3{
-    margin-left: 1em;
+h3 {
+  margin-left: 1em;
 }
 
-.todo-container{
-    display: flex;
-    flex-direction: column;
-    padding: 10%;
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
 }
 
-.item-container{
-    border-width: 3px;
-    border-style: solid;
-    border-color: black;
-    padding: 3%;
+.item-container {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  padding: 3%;
 }
 
-.todo-item{
-    display: flex;
-    flex-direction: row;
-    margin: 1%;
-    padding-left: 3%;
-    padding-right: 3%;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height:4em;
-    border: none;
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 4em;
+  border: none;
 }
