@@ -10,7 +10,7 @@ const Navbar = () => {
           Month
         </Link>
         <Link className="nav-button" to={`todo/${new Date().getDate()}`}>
-          Day
+          Today
         </Link>
       </div>
     </div>
