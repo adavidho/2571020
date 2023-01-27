@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import "./ToDo.css";
-import ToDoItem from "./components/ToDoItrem/ToDoItem";
+import ToDoItem from "./ToDoItrem/ToDoItem";
 
 const ToDo = ({ updateDays, toDoStore }) => {
   const { id } = useParams();
