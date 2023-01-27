@@ -35,6 +35,7 @@ const CalendarView = ({ toDoStore }) => {
           )
         }
         tileClassName="tile-class"
+        className="calendar"
       />
     </div>
   );

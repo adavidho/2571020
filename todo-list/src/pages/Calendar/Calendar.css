@@ -6,6 +6,10 @@ p {
   justify-content: center;
   padding: 8%;
 }
+.calendar{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 .react-calendar {
   width: 85%;
   height: 90%;
