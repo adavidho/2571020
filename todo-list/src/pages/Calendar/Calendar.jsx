@@ -8,7 +8,6 @@ import "./Calendar.css";
 import CalenderTile from "./CalenderTile/CalenderTile";
 
 const CalendarView = ({ toDoStore }) => {
-  const [value, onChange] = useState(new Date());
   const navigate = useNavigate();
   const linkToDay = (value) => {
     const date = new Date(value);

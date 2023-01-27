@@ -1,6 +1,5 @@
 // Matr. Nr. 2571020
 
-import "./App.css";
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -9,6 +8,7 @@ import ToDo from "./pages/ToDo/ToDo";
 import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
+  // Central data object, one item for each day (key - day: value - list)
   let [toDoStore, setToDoStore] = useState({
     1: [],
     2: [],
@@ -40,6 +40,7 @@ const App = () => {
     28: [],
   });
 
+  // Function used to update the to-do list of a given day
   const updateDays = (newDay) => {
     let updatedValue = {};
     updatedValue = { id: newDay };
