@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   let [toDoStore, setToDoStore] = useState({
-    1: {},
+    1: [],
     2: [],
     3: [],
     4: [],
@@ -36,6 +36,7 @@ const App = () => {
     24: [],
     25: [],
     26: [],
+    27: [],
     28: [],
   });
 

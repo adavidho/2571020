@@ -34,6 +34,7 @@ const ToDo = ({ updateDays, toDoStore }) => {
     items[key]["checked"] = !items[key]["checked"];
     updateDays(items);
   };
+
   const rows = [];
   for (const [key, value] of Object.entries(toDoStore[id])) {
     rows.push(
